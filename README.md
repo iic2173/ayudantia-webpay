@@ -25,7 +25,7 @@ Backend recibira de la solicitud de compra un token y una URL de la siguiente ma
 }
 ```
 
-Este token y URL deben ser enviados a la UI de forma que el usuario pueda confirmar la compra. Para esto, la documentacion de Webpay recomienda el uso de el tag `<form>` de HTML, junto a un `<input type="hidden">` para enviar el token. Tal que quede de la siguiente manera
+Este token y URL deben ser enviados al *Frontend* de forma que el usuario pueda confirmar la compra. Para esto, la documentacion de Webpay recomienda el uso de el tag `<form>` de HTML, junto a un `<input type="hidden">` para enviar el token. Tal que quede de la siguiente manera
 
 ```html
 <form action={url} method="POST">
