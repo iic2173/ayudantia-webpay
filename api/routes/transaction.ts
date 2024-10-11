@@ -35,7 +35,7 @@ trxRouter.post('/create', async (ctx) => {
       }
     });
     // // USO: tx.create(transactionId, nombreComercio, monto, urlRetorno)
-    const trx = await tx.create(newTrx.id, "test-iic2173", amount, process.env?.REDIRECT_URL || "http://localhost:8000");
+    const trx = await tx.create(newTrx.id, "test-iic2173", amount, process.env?.REDIRECT_URL || "http://localhost:8000/completed-purchase");
     await db.transaction.update({
       where: {
         id: newTrx.id
